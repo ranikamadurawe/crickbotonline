@@ -1,0 +1,13 @@
+div.a {
+    text-align: center;
+}
+
+div.b {
+    text-align: justify;
+}
+
+div.c {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 20px;
+}

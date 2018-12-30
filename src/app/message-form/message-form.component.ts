@@ -23,7 +23,7 @@ export class MessageFormComponent implements OnInit {
   public sendMessage(): void {
       if(this.message.content == ""){
         this.messages.push(
-          new Message("Tell me something", 'assets/images/bot.png', "void" )
+          new Message("Tell me something", 'assets/images/bot.png', new Date() )
         );
       }else{
         this.message.timestamp = new Date();
@@ -37,7 +37,6 @@ export class MessageFormComponent implements OnInit {
 
         this.message = new Message('', 'assets/images/user.png');
       }
-    }
   }
 
 }
