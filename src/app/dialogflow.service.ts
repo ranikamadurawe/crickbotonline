@@ -8,7 +8,7 @@ import { environment } from '../environments/environment';
 export class DialogflowService {
 
   private baseURL: string = "https://api.dialogflow.com/v1/query?v=20150910";
-  private token: string = environment.token;
+  private token: string = 'a0a59684870c4fee9bd63bad94c6c4ce ';
 
   constructor(private http: Http){}
 
