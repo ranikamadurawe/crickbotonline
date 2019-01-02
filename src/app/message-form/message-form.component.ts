@@ -15,6 +15,8 @@ export class MessageFormComponent implements OnInit {
   @Input('messages')
   messages : Message[];
 
+
+
   constructor(private dialogFlowService: DialogflowService) { }
 
   ngOnInit() {
@@ -37,6 +39,13 @@ export class MessageFormComponent implements OnInit {
 
         this.message = new Message('', 'assets/images/user.png');
       }
+  }
+
+  keyDownFunction(event) {
+    if(event.keyCode == 13) {
+      this.sendMessage();
+      // rest of your code
+    }
   }
 
 }
